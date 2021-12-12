@@ -1,0 +1,2070 @@
+/* CSS NORMALIZATION: https://necolas.github.io/normalize.css/ */
+html{line-height:1.15;-webkit-text-size-adjust:100%;}body{margin:0;}main{display:block;}h1{font-size:2em;margin:.67em 0;}hr{box-sizing:content-box;height:0;overflow:visible;}pre{font-family:monospace,monospace;font-size:1em;}a{background-color:transparent;}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted;}b,strong{font-weight:bolder;}code,kbd,samp{font-family:monospace,monospace;font-size:1em;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sub{bottom:-.25em;}sup{top:-.5em;}img{border-style:none;}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0;}button,input{overflow:visible;}button,select{text-transform:none;}button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0;}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText;}fieldset{padding:.35em .75em .625em;}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal;}progress{vertical-align:baseline;}textarea{overflow:auto;}[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0;}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto;}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px;}[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit;}details{display:block;}summary{display:list-item;}template{display:none;}[hidden]{display:none;}
+/* END CSS NORMALIZATION: https://necolas.github.io/normalize.css/ */
+
+/* 
+SPORTS WAREHOUSE STATIC WEBSITE.
+
+- - - -
+## Colors
+Logo and BG highlight [#00aced Cyan Process].
+Logo, heading BG and sale price text [#ff6d0c Pumpkin].
+Menu BG, brands link BG and footer contact links [#002936 Gunmetal].
+Headings and link text [#ffffff White].
+Product title text [#006989 Blue Sapphire].
+Product price text [#595959 Davys Grey].
+Shopping cart items BG [#0092ca Blue NCS].
+
+## Fonts
+**Open Sans** Google font via Adobe TypeKit
+LINK: <link rel=“stylesheet” href=“https://use.typekit.net/llx6kjr.css”>
+font-size: 1em;  16px base paragraph text (based on 16px default) 
+- - - -
+font-family: 'Open Sans', arial, sans-serif;
+font-weight: 400; Regular
+font-style: normal;
+* 1.375em/22px - product price text
+* 1.125em/18px - featured and brand heading text
+* 0.938em/15px - product name text
+* 1em/16px - search text - product menu text - sale former price text
+* 0.875em/14px - site-menu text - footer menu link text
+* 0.813em/13px - items count text
+* 0.75em/12px - copyright text
+* 0.688em/11px - ‘WAS’ sale text
+- - - -
+font-family: 'Open Sans', arial, sans-serif;
+font-weight: 300; Light
+font-style: normal;
+* 2.5em/40px - slideshow title text [desktop]
+* 1.375em/22px - footer navigation heading text
+* 1.125em18px - slideshow promo and button text [desktop]
+* 1em/16px - base paragraph
+* 0.938em/15px - social media link text
+- - - -
+**Font Awesome icons**
+LINK: <script src=“https://kit.fontawesome.com/1ac9e13ece.js” crossorigin=“anonymous”></script>
+* fa-shopping-cart - <I class=“fas fa-shopping-cart”></I>
+* fa-lock - <I class=“fas fa-lock”></I>
+* fa-facebook-f - <I class=“fab fa-facebook-f”></I>
+* fa-twitter - <I class=“fab fa-twitter”></I>
+* fa-paper-plane - <I class=“fas fa-paper-plane”></I> 
+*/
+
+/*
+.declaration-order {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    /* Misc *//*
+}
+
+/* GLOBAL STYLES
+--------------------------------------------------*/
+a:hover,
+a:active {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    color: white;
+    /* Visual */
+    /* Misc */
+}
+a {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    color: white;
+    text-decoration: none;
+    /* Visual */
+    /* Misc */
+}
+body {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    font-size: 1em;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: 300; /* Light */
+    font-style: normal;
+    /* Visual */
+    /* Misc */
+}
+h2, h3 {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    font-weight: 300;
+    /* Visual */
+    /* Misc */
+}
+h2 {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    font-size: 1.375em;
+    /* Visual */
+    /* Misc */
+}
+h3 {
+    /* Position */
+    /* Box Model */
+    margin: 0.25em 0;
+    /* Typography */
+    color: #ff6d0c;
+    font-size: 1.3em;
+    /* Visual */
+    /* Misc */
+}
+h4 {
+    /* Position */
+    /* Box Model */
+    margin-bottom: 0.25em;
+    /* Typography */
+    color: #006989;
+    font-size: 1.2em;
+    /* Visual */
+    /* Misc */
+}
+img {
+    /* Position */
+    /* Box Model */
+    width: 100%;
+    height: auto;
+    /* Typography */
+    line-height: 1;
+    /* Visual */
+    /* Misc */
+}
+.bold {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    font-weight: bold;
+    /* Visual */
+    /* Misc */
+}
+.fas {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    font-family: 'FontAwesome';
+    /* Visual */
+    /* Misc */
+}
+.highlight-heading {
+    /* Position */
+    display: block;
+    /* Box Model */
+    margin: 1em 0 0.8em 0.7em;
+    padding: 0.7em 0.25em 0.7em 1.2em;
+    border-radius: 2em 0 0 2em;
+    /* Typography */
+    text-align: left;
+    color: white;
+    /* Visual */
+    background-color: #ff6d0c;
+    /* Misc */
+}
+/* Hide desktop features and display mobile features.
+-------------------------------------------------------*/
+/* NOTE: see end of file for media query adjustments for this selector. */
+.desktop-only {
+    /* Position */
+    display: none;
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+/* NOTE: see end of file for media query adjustments for this selector. */
+.mobile-only {
+    /* Position */
+    display: contents;
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+
+.screen-read {
+    /* Position */
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    overflow: hidden;
+    /* Box Model */
+    width: 1px;
+    height: 1px;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+.total {
+    border-bottom: 1px solid #ff6d0c;
+}
+.upper-case {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    text-transform: uppercase;
+    /* Visual */
+    /* Misc */
+}
+.full-width-bg {
+    /* Position */
+    /* Box Model */
+    width: 100%;
+    /* Typography */
+    /* Visual */
+    background-color: #00aced;
+    /* Misc */
+}
+/* CONTENT WRAPPER ETC.
+--------------------------------------------------*/
+.content-wrapper {
+    /* Position */
+    margin: auto;
+    /* Box Model */
+    max-width: 1000px;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+/* HEADER
+--------------------------------------------------*/
+/* #nav-bar 
+----------------------------------------*/
+#nav-bar {
+    /* Position */
+    display: flow-root;
+    /* Box Model */
+    width: 100%;
+    height: 35px;
+    /* Typography */
+    font-size: 0.875em;
+    /* Visual */
+    background-color: #00aced;
+    /* Misc */
+}
+/* .shopping-links 
+------------------------------*/
+.fa-lock {
+    /* Position */
+    /* Box Model */
+    margin-right: 0.1em;
+    /* Typography */
+    font-size: 1.2rem;
+    vertical-align: sub;
+    /* Visual */
+    /* Misc */
+}
+.fa-shopping-cart {
+    /* Position */
+    /* Box Model */
+    margin-right: 0.3em;
+    margin-left: 1.5em;
+    /* Typography */
+    font-size: 1.5em;
+    vertical-align: sub;
+    /* Visual */
+    /* Misc */
+}
+.item-count {
+    /* Position */
+    /* Box Model */
+    padding: 0.3em 1em;
+    margin: 0.1em 0.2em 0.1em 0.5em;
+    /* Typography */
+    font-size: 0.813em;
+    /* Visual */
+    border-radius: 0.9em;
+    background-color: #0092ca;
+    /* Misc */
+}
+.shopping-links {
+    /* Position */
+    float: right;
+    /* Box Model */
+    padding: 0;
+    margin: 0.5em;
+    /* Typography */
+    vertical-align: middle;
+    /* Visual */
+    /* Misc */
+}
+/* Adjustment for lock icon on larger devices  */
+/* 50em = 800px min-width */
+@media (min-width: 50em) {
+    .shopping-links i {
+        /* Position */
+        display: inline-block;
+        /* Box Model */
+        margin-right: 0.3em;
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    }
+}
+@media (min-width: 1000px) {
+    .shopping-links {
+        /* Position */
+        /* Box Model */
+        margin-right: 0;
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    }
+}
+/* <nav> 
+------------------------------*/
+/* #site-nav 
+--------------------*/
+.lock {
+    /* Position */
+    /* Box Model */
+    padding: 0 0.5em 0 0.15em;
+    /* Typography */
+    font-size: 1.4em;
+    /* Visual */
+    /* Misc */
+}
+.site-nav__deco {
+    /* Position */
+    display: inline-block;
+    /* Box Model */
+    padding: 0 0.5em 0 0.2em;
+    /* Typography */
+    font-size: 1.7em;
+    font-weight: 100; /* Light */
+    vertical-align: sub;
+    /* Visual */
+    /* Misc */
+}
+.site-nav__menu {
+    /* Position */
+    clear: both;
+    /* Box Model */
+    margin: 0;
+    max-height: 0;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+    transition: max-height .2s ease-out;
+}
+#site-nav {
+    /* Position */
+    position: absolute;
+    /* Box Model */
+    width: 100%;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+#site-nav label {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    background-color: inherit;
+    /* Misc */
+}
+#site-nav ul {
+    /* Position */
+    /* Box Model */
+    margin: 0 0 0 0;
+    padding-left: 0;
+    /* Typography */
+    /* Visual */
+    list-style: none;
+    background-color: #00aced;
+    /* Misc */
+    overflow: hidden;
+}
+#site-nav li a {
+    /* Position */
+    display: block;
+    /* Box Model */
+    margin: 0 10px;
+    padding: 10px 10px;
+    /* Typography */
+    /* Visual */
+    border-bottom: 1px solid white;
+    /* Misc */
+}
+/* Menu transformation from mobile to desktop  */
+/* 50em = 800px min-width */
+@media (min-width: 50em) {
+    .site-nav__menu {
+        /* Position */
+        clear: none;
+        /* Box Model */
+        max-height: none;
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    }
+    #site-nav {
+        /* Position */
+        float: left;
+        /* Box Model */
+        width: unset;
+        padding: 0;
+        margin: 0;
+        /* Typography */
+        vertical-align: middle;
+        /* Visual */
+        border: none;
+        /* Misc */
+    }
+    #site-nav li {
+        /* Position */
+        float: left;
+        /* Box Model */
+        margin: 0;
+        padding: 0;
+        /* Typography */
+        /* Visual */
+        border: none;
+        /* Misc */
+    }
+    #site-nav ul {
+        /* Position */
+        /* Box Model */
+        padding: 0 0 0 0.8em;
+        margin: 0.5em 0;
+        /* Typography */
+        /* Visual */
+        list-style-type: none;
+        /* Misc */
+    }
+    #site-nav li a {
+        /* Position */
+        /* Box Model */
+        padding: 0.3em 0;
+        margin: 0 2em 0 0;
+        /* Typography */
+        vertical-align: sub;
+        /* Visual */
+        border: none;
+        /* Misc */
+    }
+}
+/* Remove padding-left for full-width desktop. */
+@media (min-width: 1000px) {
+    #site-nav ul {
+        /* Position */
+        /* Box Model */
+        padding: 0;
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    }
+}
+/* .menu-icon 
+--------------------*/
+.fa-bars {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    font-size: 1.5em;
+    vertical-align: sub;
+    color: white;
+    /* Visual */
+    /* Misc */
+}
+.site-nav__menu-icon {
+    /* Position */
+    display: block;
+    float: left;
+    position: relative;
+    /* Box Model */
+    padding: 0;
+    margin: 0.5em 0.8em;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+    cursor: pointer;
+    user-select: none;
+}
+/* Remove mobile menu icon */
+@media (min-width: 50em) {
+    .site-nav__menu-icon {
+        /* Position */
+        display: none;
+        /* Box Model */
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    }
+}
+.site-nav__nav-icon {
+    /* Position */
+    /* Box Model */
+    margin-right: 0.5em;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+.site-nav__nav-text {
+    /* Position */
+    display: inline;
+    position: relative;
+    /* Box Model */
+    margin: 0 0 0 0;
+    /* Typography */
+    color: white;
+    line-height: 0.8;
+    /* Visual */
+    /* Misc */
+}
+/* Hide the actual checkbox */
+#expand-toggle {
+    /* Position */
+    display: none;
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+#expand-toggle:checked ~ .site-nav__menu {
+    /* Position */
+    /* position: absolute; */
+    /* Box Model */
+    width: 100%;
+    padding-bottom: 7.5em;
+    max-height: 240px;
+    /* Typography */
+    /* Visual */
+    
+    /* Misc */
+    z-index: 100;
+}
+#menu-btn:checked ~ .site-nav__nav-icon {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    background: transparent;
+    /* Misc */
+}
+/* Header Image 
+----------------------------------------*/
+#h1-logo {
+    /* Position */
+    display: block;
+    /* position: inherit; */
+    /* Box Model */
+    margin: 1em 1em 0.5em 1em;
+    padding: 0;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+/* Re-arrange header logo and search bar for larger screens. */
+@media (min-width: 1000px) {
+    .logo-search {
+        /* Position */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12%;
+        /* Box Model */
+        width: 100%;
+        margin: 1.5em 0;
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    }
+    #h1-logo {
+        /* Position */
+        display: inline-block;
+        flex-basis: 61.25%;
+        /* Box Model */
+        margin: 0;
+        padding: 0;
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    }
+    #h1-logo img {
+        /* Position */
+        /* Box Model */
+        /* Typography */
+        vertical-align: middle;
+        /* Visual */
+        /* Misc */
+    }
+}
+/* Search Box 
+----------------------------------------*/
+.search {
+    /* Position */
+    /* Box Model */
+    padding: 0.6em 0.1em;
+    /* Typography */
+    text-align: center;
+    /* Visual */
+    /* Misc */
+}
+.search-btn {
+    /* Position */
+    display: inline;
+    /* Box Model */
+    height: 2.3em;
+    width: 2.3em;
+    padding: 0.4em 0.4em 0.4em 0.4em;
+    margin: 0 0 0 0.4em;
+    /* Typography */
+    color: white;
+    font-size: 1.2em;
+    /* Visual */
+    background-color: #002936;
+    border: none;
+    border-radius: 50%;
+    /* Misc */
+}
+.search form {
+    /* Position */
+    /* Box Model */
+    padding: 0;
+    margin: 0;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+#search {
+    /* Position */
+    /* Box Model */
+    padding: 0.7em 1em 0.8em 1.4em;
+    /* Typography */
+    /* Visual */
+    border: 1px solid #002936;
+    border-radius: 29px;
+    /* Misc */
+}
+/* Adjustment of search form for full-width desktop. */
+@media (min-width: 1000px) {
+    .search {
+        /* Position */
+        flex-basis: 32.5%;
+        /* Box Model */
+        margin: 0;
+        padding: 0;
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    }
+}
+/* Products Menu 
+----------------------------------------*/
+.product-menu-icon {
+    /* Position */
+    float: right;
+    /* Box Model */
+    /* Typography */
+    color: #00aced;
+    /* Visual */
+    /* Misc */
+}
+#product-menu {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+#product-menu ul {
+    /* Position */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0 0 3% 3%;
+    /* Typography */
+    color: white;
+    /* Visual */
+    background-color: #002936;
+    list-style: none;
+    /* Misc */
+}
+#product-menu li {
+    /* Position */
+    display: flex;
+    flex-basis: 46.7%;
+    /* Box Model */
+    padding: 0;
+    margin: 3% 3% 0 0;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+#product-menu a:hover, 
+#product-menu a:active {
+    /* Position */
+    /* Box Model */
+    padding: 0.8em;
+    margin: 1.5%;
+    /* Typography */
+    color: white;
+    /* Visual */
+    background-color: #00aced;
+    border: 1px solid #00aced;
+    border-radius: 0.4em;
+    /* Misc */
+}
+#product-menu a:hover span, 
+#product-menu a:active span {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    color: white;
+    /* Visual */
+    /* Misc */
+}
+#product-menu a {
+    /* Position */
+    display: inline-block;
+    /* Box Model */
+    width: 100%;
+    padding: 0.8em;
+    margin: 1.5%;
+    /* Typography */
+    /* Visual */
+    border: 1px solid #00aced;
+    border-radius: 0.4em;
+    /* Misc */
+}
+/* Add product menu for large screen devices. */
+@media (min-width: 50em) {
+    .product-menu-icon {
+        /* Position */
+        display: none;
+        /* Box Model */
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    }
+    #product-menu {
+        /* Position */
+        /* Box Model */
+        margin: 1.5em 0 1.5em 0.7em;
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    }
+    #product-menu a:hover,
+    #product-menu a:active,
+    #product-menu a:target {
+        /* Position */
+        /* Box Model */
+        margin: 0;
+        padding: 0.8rem 1.5rem;
+        /* Typography */
+        /* Visual */
+        border: none;
+        background-color: #00aced;
+        border-radius: 1.975rem 0 0 1.975rem;
+        /* Misc */
+    }
+    #product-menu a {
+        /* Position */
+        display: block;
+        /* Box Model */
+        /* width: 100%; */
+        width: inherit;
+        padding: 0.8rem 1.5rem;
+        margin: 0;
+        /* Typography */
+        /* Visual */
+        border: none;
+        border-radius: unset;
+        /* Misc */
+    }
+    
+    #product-menu li {
+        /* Position */
+        display: inline-block;
+        /* Box Model */
+        padding: 0;
+        margin: 0;
+        /* Typography */
+        /* Visual */
+        /* Misc */
+
+    }
+    #product-menu ul {
+        /* Position */
+        display: block;
+        /* Box Model */
+        /* margin: 1.5em 0 1.5em 0.7em; */
+        padding: 0.7rem 0 0.7rem 1.5rem;
+        /* Typography */
+        /* color: white; */
+        /* Visual */
+        background-color: #002936;
+        border-radius: 2rem 0 0 2rem;
+        list-style: none;
+        /* Misc */
+    }
+}
+
+/* SLIDESHOW OVERRIDE STYLING
+CSS to override the default slick sideshow styles. */
+/* @media (width: 1000px) { */
+#slideshow .slick-dots {
+    /* Position */
+    bottom: 0;
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+#slideshow .slick-dots li button:before {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    color: #00aced;
+    font-size: 16px;
+    /* Visual */
+    /* Misc */
+}
+/* GENERAL STYLING FOR THE WEBSITE */
+.slideshow-wrapper * {
+    /* Position */
+    /* Box Model */
+    box-sizing: border-box;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+.slideshow-wrapper {
+    /* Position */
+    display: none;
+    /* Box Model */
+    max-width: 1000px;
+    margin: 0 auto;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+#slideshow {
+    /* Position */
+    /* Box Model */
+    width: 1000px;
+    margin: 0 auto;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+#slideshow .overlay button {
+    /* Position */
+    /* Box Model */
+    width: 130px;
+    height: 38px;
+    /* Typography */
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 300;
+    /* Visual */
+    background-color: #006989;
+    border: none;
+    border-radius: 8px;
+    /* Misc */
+}
+#slideshow h2 {
+    /* Position */
+    /* Box Model */
+    margin: 0.3em 0 0.5em 0;
+    padding: 0;
+    /* Typography */
+    font-size: 2.5rem;
+    font-weight: 300;
+    /* Visual */
+    /* Misc */
+}
+#slideshow img {
+    /* Position */
+    /* Box Model */
+    width: 800px;
+    height: auto;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+#slideshow p {
+    /* Position */
+    /* Box Model */
+    padding: 0;
+    margin: 0;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+#slideshow ul {
+    /* Position */
+    /* Box Model */
+    padding: 0;
+    margin: 0;
+    /* Typography */
+    /* Visual */
+    list-style: none;
+    /* Misc */
+}
+#slideshow .slick-slide {
+    /* Position */
+    position: relative; /* contain the absolute positioned .overlay. */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+#slideshow .slick-slide .overlay {
+    /* Position */
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* Box Model */
+    padding: 2.3em 3.5em 2.5em 5.5em;
+    width: 300px;
+    /* Typography */
+    /* Visual */
+    background-color: #00aced;
+    border-radius: 300px 0 0 300px;
+    color: white;
+    outline: 4px solid white;
+    text-align: right;
+    /* Misc */
+}
+#slideshow .slick-slide .overlay div {
+    /* Position */
+    /* Box Model */
+    padding: 0;
+    /* Typography */
+    color: white;
+    font-size: 1.125rem;
+    text-align: center;
+    /* Visual */
+    /* Misc */
+}
+/* MAIN
+--------------------------------------------------*/
+/* Contact Page 
+----------------------------------------*/
+.form-intro a:hover span, 
+.form-intro a:active span {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    color: #002936;
+    text-decoration: underline;
+    /* Visual */
+    /* Misc */
+}
+.form-intro {
+    /* Position */
+    /* Box Model */
+    margin: 0;
+    padding: 0.5em;
+    /* Typography */
+    line-height: 1.7;
+    /* Visual */
+    /* Misc */
+}
+.form-intro a {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    color: #002936;
+    text-decoration: underline;
+    /* Visual */
+    /* Misc */
+}
+/* Contact Form 
+----------------------------------------*/
+/* CONTACT FORM FUNCTIONAL STYLING 
+Styling to control the display of error messages. */
+form .error-message {
+    display: none; /* Hide error message by default. */
+    margin-left: 1em;
+    padding: 0.25em 0.5em;
+    font-size: 0.9em;
+    font-weight: normal;
+    font-style: italic;
+    background-color: #ff6d0c;
+}
+form .error-row .error-message {
+    /* Position */
+    display: inline-block; /* Show error message in .error state. */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+form .error-row label, .error-row p {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    font-weight: bold;
+    /* Visual */
+    background-color: #ff6d0c;
+    /* Misc */
+}
+form .error-row input, .error-row textarea {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    border: 1px solid #c33;
+    /* Misc */
+}
+form .error-row + .error-message, .error-row {
+    /* Position */
+    display: block;
+    /* Box Model */
+    padding-left: 0;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+/* OPTIONAL STYLING
+Styling to control the overall appearance of the web form. */
+legend {
+    /* Position */
+    position: relative;
+    top: 1em;
+    /* Box Model */
+    padding: 0.8em;
+    /* Typography */
+    font-size: 1.05em;
+    letter-spacing: 0.1em;
+    /* Visual */
+    background-color: #00aced;
+    /* Misc */
+}
+fieldset {
+    /* Position */
+    /* Box Model */
+    margin: 0;
+    /* Typography */
+    color: #fff;
+    /* Visual */
+    /* opacity: 0.40; */
+    background-image: url('../images/quino-al-runners-c5SEmsjqq5o-unsplash-30opas-opt.jpg');
+    background-size: cover;
+    background-color: #ebebeb;
+    /* Misc */
+}
+label {
+    /* Position */
+    display: inline-block;
+    text-align: right;
+    /* Box Model */
+    margin: 0.6em 0.6em 0 0;
+    min-height: 24px;
+    padding: 0.5em;
+    /* Typography */
+    /* Visual */
+    background-color: #00000090;
+    /* Misc */
+}
+textarea {
+    /* Position */
+    /* Box Model */
+    width: 90%;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+.error {
+    /* Position */
+    /* Box Model */
+    padding: 0.5em;
+    /* Typography */
+    color: #fff;
+    /* Visual */
+    background-color: #ff6d0c;
+    /* Misc */
+}
+.radioLabel {
+    /* Position */
+    /* Box Model */
+    display: inline;
+    width: auto;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+.required {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    font-size: 1.25em;
+    /* Visual */
+    /* Misc */
+}
+#cf-resetButton, #cf-submitButton {
+    /* Position */
+    /* Box Model */
+    margin-bottom: 20px;
+    margin-right: 10px;
+    width: 6em;
+    padding: 0.5em;
+    /* Typography */
+    color: #fff;
+    letter-spacing: 0.1em;
+    /* Visual */
+    border: none;
+    /* Misc */
+}
+#cf-resetButton {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    background-color: #00aced;
+    /* Misc */
+}
+#cf-submitButton {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    background-color: #ff6d0c;
+    /* Misc */
+}
+#contact-form input, fieldset, textarea {
+    /* Position */
+    /* Box Model */
+    border: 1px solid #ff6d0c;
+    padding: 0.5em;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+#contact-form input, select, textarea {
+    /* Position */
+    /* Box Model */
+    margin: 1em 0 0 0;
+    /* width: 90%; */
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+#phone input {
+    /* Position */
+    display: inline-block;
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+/* Shopping Cart Page 
+----------------------------------------*/
+.cart-flex-wrapper {
+    display: flex;
+    margin: 4em 0;
+}
+.cart-flex-wrapper table {
+    /* display: inline-block; */
+    flex-basis: 80%;
+}
+.cart-flex-wrapper table tr {
+    text-align: left;
+}
+.cart-flex-wrapper #cart-summary {
+    /* display: inline-block; */
+    flex-basis: 20%;
+    margin-left: 2em;
+    padding: 2em;
+    border: 2px solid #ff6d0c;
+}
+/* About Page 
+----------------------------------------*/
+#about-sw {
+    /* Position */
+    /* Box Model */
+    padding: 0.5em;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+.about-logo {
+    /* Position */
+    float: left;
+    /* Box Model */
+    padding: 1.5em;
+    max-width: 300px;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+#about-sw .call2action {
+    /* Position */
+    /* Box Model */
+    padding-top: 0.5em;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+#about-sw .social-media {
+    /* Position */
+    display: flex;
+    justify-content: center;
+    /* Box Model */
+    padding: 0 1em;
+    /* Typography */
+    text-align: center;
+    /* Visual */
+    background-color: #00aced;
+    /* Misc */
+}
+#about-sw .social-media a {
+    /* Position */
+    /* Box Model */
+    padding: 1em;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+/* Product Items 
+----------------------------------------*/
+.product-item {
+    /* Position */
+    /* Box Model */
+    margin: 0;
+    padding: 1em;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+.product-item .product-image {
+    /* Position */
+    /* Box Model */
+    max-width: 400px;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+.product-item h2 {
+    /* Position */
+    /* Box Model */
+    margin: 0;
+    padding: 0;
+    /* Typography */
+    font-size: 3em;
+    /* Visual */
+    /* Misc */
+}
+@media (min-width: 47em) {
+    .product-item .product-image {
+        /* Position */
+        float: left;
+        /* Box Model */
+        padding-right: 0;
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    }
+}
+@media (min-width: 40em) {
+    .product-item .product-image {
+        /* Position */
+        /* Box Model */
+        max-width: 500px;
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    }
+}
+/* Products by Category 
+----------------------------------------*/
+/* Adjustments for Product cards for smaller device screen increases. */
+.category-items .product-image {
+    /* Position */
+    float: initial;
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+.category-items .product-wrapper {
+    /* Position */
+    justify-content: space-evenly;
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+.category-items .product {
+    /* Position */
+    flex-basis: 40%;
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+@media (min-width: 45em) {
+    .category-items .product-image {
+        /* Position */
+        float: left;
+        /* Box Model */
+        padding-right: 0;
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    }
+}
+/* Products Search
+----------------------------------------*/
+.search-results {
+    /* Position */
+    /* Box Model */
+    width: 100%;
+    /* Typography */
+    text-align: left;
+    /* Visual */
+    /* Misc */
+}
+/* All Products Sort 
+----------------------------------------*/
+td, th {
+    /* Position */
+    /* Box Model */
+    padding: 0.5em;
+    /* Typography */
+    /* Visual */
+    border-top: 1px solid #00aced;
+    /* Misc */
+}
+td:first-child {
+    /* Position */
+    /* Box Model */
+    /* padding: 0; */
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+th a:any-link {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    color: #ff6d0c;
+    /* Visual */
+    /* Misc */
+}
+tr a:any-link {
+    /* display: block; */
+}
+.all-items-sort {
+    /* Position */
+    /* Box Model */
+    width: 100%;
+    /* Typography */
+    text-align: left;
+    /* Visual */
+    /* Misc */
+}
+.all-items-sort a {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    color: #ff6d0c;
+    /* Visual */
+    /* Misc */
+}
+.all-items-sort tr img {
+    /* Position */
+    /* Box Model */
+    max-width: 176px;
+    height: auto;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+.all-items-sort a .on-sale__markdown-price {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    color: #595959;
+    /* Visual */
+    /* Misc */
+}
+.all-items-sort a .on-sale-text {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    color: #595959;
+    /* Visual */
+    /* Misc */
+}
+/* Featured Products 
+----------------------------------------*/
+/* Temporary Sale Settings */
+/* .product1 .product-price {display: none;}
+.product2 .on-sale {display: none;}
+.product3 .product-price {display: none;}
+.product4 .on-sale {display: none;}
+.product5 .on-sale {display: none;} */
+/*------------------------------*/
+/* Product Pricing 
+------------------------------*/
+.product-price  {
+    /* Position */
+    /* Box Model */
+    margin: 1.3em 0;
+    /* width: 5px; */
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+.product-price p {
+    /* Position */
+    /* Box Model */
+    margin: 0;
+    /* width: 5px; */
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+.product-price__price {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    color: #595959;
+    font-size: 1.375em;
+    /* Visual */
+    /* Misc */
+}
+/* On Sale Pricing 
+------------------------------*/
+.on-sale__pricing {
+    /* Position */
+    /* Box Model */
+    margin-bottom: 0;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+.on-sale__price {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    color: #ff6d0c;
+    font-size: 1.375em;
+    /* Visual */
+    /* Misc */
+}
+.on-sale__markdown {
+    /* Position */
+    /* Box Model */
+    margin: 0;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+.on-sale__markdown-price {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    text-decoration: line-through;
+    /* Visual */
+    /* Misc */
+}
+.on-sale__was {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    font-size: 0.688em;
+    /* Visual */
+    /* Misc */
+}
+/* General Product Styles 
+------------------------------*/
+.product {
+    /* Position */
+    flex-basis: 40%;
+    /* Box Model */
+    margin: 0.4em;
+    padding: 0.5em;
+    /* Typography */
+    text-align: center;
+    /* Visual */
+    /* Misc */
+}
+.product-title {
+    /* Position */
+    /* Box Model */
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+    padding: 0 1em;
+    /* Typography */
+    color: #006989;
+    font-size: 0.938em;
+    font-weight: 300;
+    /* Visual */
+    /* Misc */
+}
+.product-wrapper {
+    /* Position */
+    display: flex;
+    flex-wrap: wrap;
+    /* Box Model */
+    margin-left: 0.5em;
+    margin-bottom: 2em;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+.product-wrapper a:hover,
+.product-wrapper a:active {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    border-radius: 6px;
+    box-shadow:
+        inset   0 0 0 1px rgb(255,255,255),
+                0.2em 0.2em 0.5em rgba(255,109,012,0.5),
+                0 0 0 0.25em rgb(255,255,255),
+                -0.25em -0.25em 0.25em rgba(255,109,012,0.5);
+    /* Misc */
+}
+.product-wrapper a {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    color: inherit;
+    /* Visual */
+    /* Misc */
+}
+.product .product-image {
+    /* Position */
+    /* Box Model */
+    max-width: 176px;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+/* Adjustments for Product columns as device screen increases. */
+@media (min-width: 35em) {
+    .featured {
+        /* Position */
+        clear: both;
+        /* Box Model */
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    }
+    .product {
+        /* Position */
+        flex-basis: 28%;
+        /* Box Model */
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    }
+}
+@media (min-width: 45em) {
+    .featured {
+        /* Position */
+        clear: both;
+        /* Box Model */
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    }
+}
+@media (min-width: 50em) {
+    .product {
+        /* Position */
+        flex-basis: 18%;
+        /* Box Model */
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    }
+}
+@media (min-width: 1000px) {
+    .product {
+        /* Position */
+        flex-basis: 17%;
+        /* Box Model */
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    }
+    /* Adjust left margin to zero for full-width devices. */
+    .highlight-heading {
+        /* Position */
+        /* Box Model */
+        margin-left: 0;
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    }
+}
+/* Product Brands
+----------------------------------------*/
+.highlight-statement {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    color: #00aced;
+    font-weight: 300;
+    /* Visual */
+    /* Misc */
+}
+.brands p {
+    /* Position */
+    /* Box Model */
+    padding: 1em;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+.brands ul {
+    /* Position */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* Box Model */
+    margin: 0;
+    padding: 0;
+    /* Typography */
+    /* Visual */
+    background-color: #002936;
+    list-style: none;
+    /* Misc */
+}
+.brands li {
+    /* Position */
+    /* Box Model */
+    padding: 0.68em;
+    /* Typography */
+    /* Visual */
+    background-color: #002936;
+    /* Misc */
+}
+/* Re-arrange brands text and links for larger screens. */
+@media (min-width: 50em) {
+    .brands {
+        /* Position */
+        text-align: center;
+        /* Box Model */
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    }
+    .brands p {
+        /* Position */
+        display: inline-block;
+        /* Box Model */
+        margin: 0;
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    }
+    .brands ul {
+        /* Position */
+        /* Box Model */
+        margin: 0 0 1em 0.7em;
+        padding: 0.7em 0.7em 0.7em 1.2em;
+        /* Typography */
+        /* Visual */
+        border-radius: 3em 0 0 3em;
+        /* Misc */
+    }
+}
+@media (min-width: 1000px) {
+    .brands-wrapper {
+        /* Position */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* Box Model */
+        margin-bottom: 2.8em;
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    }
+    .brands p {
+        /* Position */
+        display: inline-block;
+        flex-basis: 21%;
+        /* Box Model */
+        margin-left: 3em;
+        /* Typography */
+        line-height: 1.45;
+        text-align: left;
+        /* Visual */
+        /* Misc */
+    }
+    .brands ul {
+        /* Position */
+        /* Box Model */
+        margin: 0 0 0 0.7em;
+        padding: 0.7em 0.7em 0.7em 2em;
+        border-radius: 3em 0 0 3em;
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    }
+    .brands li {
+        /* Position */
+        /* Box Model */
+        padding: 0.7em;
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    }
+}
+/* FOOTER
+--------------------------------------------------*/
+/* Site Navigation 
+----------------------------------------*/
+.footer__site-nav {
+    /* Position */
+    /* Box Model */
+    padding: 1em 1em 0 1em;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+.footer__product-nav {
+    /* Position */
+    display: none;
+    /* Box Model */
+    padding: 1em 1em 0 1em;
+    /* Typography */
+    /* Visual */
+    background-color: #ff6d0c;
+    /* Misc */
+}
+.footer__contact-nav {
+    /* Position */
+    /* Box Model */
+    padding: 1em;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+.footer-full-menu ul {
+    /* Position */
+    /* Box Model */
+    padding-left: 1em;
+    margin-bottom: 0;
+    /* Typography */
+    /* Visual */
+    list-style: none;
+    /* Misc */
+}
+.footer-full-menu ul li:before {
+    /* Position */
+    content: '';
+    display: inline-block;
+    /* Box Model */
+    height: 0.4em;
+    width: 0.4em;
+    padding-left: 0.8em;
+    margin-left: -0.9em;
+    margin-bottom: 0.1em;
+    /* Typography */
+    vertical-align: middle;
+    /* Visual */
+    opacity: 0.35;
+    background-image: url('../images/sports-warehouse-footer-list.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* Misc */
+}
+#page-footer {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    font-size: 0.875em;
+    /* Visual */
+    /* Misc */
+}
+#page-footer h2 {
+    /* Position */
+    /* Box Model */
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    /* Typography */
+    color: white;
+    font-size: 1.375em;
+    font-weight: 300; /* Light */
+    /* Visual */
+    /* Misc */
+}
+#page-footer li {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    line-height: 1.6;
+    /* Visual */
+    /* Misc */
+}
+/* Contact Sports Warehouse 
+----------------------------------------*/
+.social-media {
+    /* Position */
+    display: flex;
+    justify-content: space-between;
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+.social-media__icon {
+    /* Position */
+    /* Box Model */
+    width: 6.3em;
+    height: 6.3em;
+    /* Typography */
+    /* Visual */
+    border: 1px solid white;
+    border-radius: 3.5em;
+    /* Misc */
+}
+.social-media .fas, .fab {
+    /* Position */
+    display: block;
+    /* Box Model */
+    /* Typography */
+    line-height: 2;
+    font-size: 3.3em;
+    /* Visual */
+    /* Misc */
+}
+.social-media__link h3 {
+    /* Position */
+    /* Box Model */
+    margin-top: 0.6em;
+    /* Typography */
+    color: white;
+    /* Visual */
+    /* Misc */
+}
+.social-media__link .fab:last-child {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    /* Misc */
+    transform: scale(1,1.4);
+}
+.contact-links {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    text-align: center;
+    /* Visual */
+    /* Misc */
+}
+.footer__contact-nav ul {
+    /* Position */
+    /* Box Model */
+    margin: 0;
+    padding: 1em;
+    /* Typography */
+    text-align: center;
+    /* Visual */
+    list-style: none;
+    /* Misc */
+}
+.footer__contact-nav a {
+    /* Position */
+    display: inline-block;
+    /* Box Model */
+    padding: 0;
+    margin: 0;
+    /* Typography */
+    text-align: center;
+    /* Visual */
+    /* Misc */
+}
+.footer__contact-nav li a {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    color: #002936;
+    /* Visual */
+    /* Misc */
+}
+.footer__contact-nav li {
+    /* Position */
+    /* Box Model */
+    padding: 0;
+    margin: 0;
+    /* Typography */
+    color: #002936;
+    font-size: 0.938em;
+    font-weight: 300; /* Light */
+    /* Visual */
+    /* Misc */
+}
+/* Re-arrange and adjust footer menus. */
+@media (min-width: 35em) {
+    .footer-flex-wrapper {
+        /* Position */
+        display: flex;
+        justify-content: space-between;
+        /* Box Model */
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    }
+    .footer__contact-nav {
+        /* Position */
+        flex-basis: 60%;
+        /* Box Model */
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    }
+    .social-media__link {
+        /* Position */
+        /* Box Model */
+        margin-left: 0.5em;
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    }
+}
+@media (min-width: 50em) {
+    .footer-full-menu {
+        /* Position */
+        /* Box Model */
+        padding-left: 1.5em;
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    }
+    .footer__product-nav {
+        /* Position */
+        display: flow-root;
+        /* Box Model */
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    }
+    .social-media__icon {
+        /* Position */
+        /* Box Model */
+        width: 5.4em;
+        height: 5.4em;
+        /* Typography */
+        /* Visual */
+        border: 1px solid white;
+        border-radius: 3.5em;
+        /* Misc */
+    }
+    .social-media__link {
+        /* Position */
+        /* Box Model */
+        margin: 0;
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    }
+    .social-media .fas, .fab {
+        /* Position */
+        /* Box Model */
+        /* Typography */
+        line-height: 2.1;
+        font-size: 2.4em;
+        /* Visual */
+        /* Misc */
+    }
+    .footer-flex-wrapper nav {
+        /* Position */
+        flex-basis: 33.5%;
+        /* Box Model */
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    }
+}
+/* Copyright
+------------------------------*/
+.copyright {
+    /* Position */
+    /* Box Model */
+    padding: 0 0.5em;
+    /* Typography */
+    text-align: center;
+    /* Visual */
+    /* Misc */
+}
+.copyright__text {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    font-size: 0.75em;
+    /* Visual */
+    /* Misc */
+}
+.copyright a:any-link {
+    /* Position */
+    /* Box Model */
+    /* Typography */
+    color: black;
+    text-decoration: underline;
+    /* Visual */
+    /* Misc */
+}
+/* remove <br> for larger devices */
+@media (min-width: 35em) {
+    .copyright__text br  {
+        /* Position */
+        display: none;
+        /* Box Model */
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    }
+}
+/* GENERAL MEDIA QUERIES FOR LARGER DEVICES
+--------------------------------------------------*/
+@media (min-width: 50em) {
+    /* Turn OFF mobile only features. */
+    .mobile-only {
+        /* Position */
+        display: none;
+        /* Box Model */
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    }
+    /* Turn ON desktop only features. */
+    .desktop-only {
+        /* Position */
+        display: contents;
+        /* Box Model */
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    }
+}
+/* Extend top product menu to full width. */
+@media (min-width: 1000px) {
+    #product-menu {
+        /* Position */
+        /* Box Model */
+        margin-left: 0;
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    }
+    .slideshow-wrapper {
+        /* Position */
+        display: contents;
+        /* Box Model */
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    }
+}

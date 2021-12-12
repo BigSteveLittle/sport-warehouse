@@ -1,0 +1,17 @@
+/* 'Default' CSS Styles for Sports Warehouse Administration. */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+article {
+    border-bottom: 1px solid #ccc;
+}
+#wrapper {
+    width: 960px;
+    padding: 1.5em 6em;
+    margin: auto;
+    border: 4px solid black;
+}
+.photo {
+    float: right;
+    margin-left: 10px;
+}
