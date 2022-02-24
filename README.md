@@ -15,3 +15,4 @@ Live website https://sportswarehouse.bigstevelittle.com.
 - [ ] Page load movement issues when using clicking on home logo and menus.
 - [ ] Administration: update an item issue where a new image must be uploaded even when there is no change to the image.
 - [ ] Footer menus: improve list decorations.
+- [ ] Apply a 'override' to the linguist language specification to identify all 'php' files as 'php' rather than 'hack' files.
