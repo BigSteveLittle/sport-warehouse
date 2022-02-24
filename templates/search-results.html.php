@@ -1,5 +1,5 @@
 
-<h2 class="highlight-heading">Results for "<?= $_GET["search"] ?>".</h2>
+<h2 class="highlight-heading">Results for "<?= htmlspecialchars($_GET["search"]) ?>".</h2>
 <table class="all-items-sort">
     <tr>
         <th> </th>
