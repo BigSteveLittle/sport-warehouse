@@ -2731,6 +2731,7 @@
 
         if ((_.options.swipe === false) || ('ontouchend' in document && _.options.swipe === false)) {
             return;
+        // deepcode ignore DuplicateIfBody: <please specify a reason of ignoring this>
         } else if (_.options.draggable === false && event.type.indexOf('mouse') !== -1) {
             return;
         }
@@ -2940,6 +2941,7 @@
                 _.$nextArrow.addClass('slick-disabled').attr('aria-disabled', 'true');
                 _.$prevArrow.removeClass('slick-disabled').attr('aria-disabled', 'false');
 
+            // deepcode ignore DuplicateIfBody: <please specify a reason of ignoring this>
             } else if (_.currentSlide >= _.slideCount - 1 && _.options.centerMode === true) {
 
                 _.$nextArrow.addClass('slick-disabled').attr('aria-disabled', 'true');
