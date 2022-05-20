@@ -232,7 +232,7 @@ class ItemAdmin {
                     if (move_uploaded_file($_FILES["photo"]["tmp_name"], $targetFile)) {
                         //delete old photo if there was one
                         if(!empty($_POST["originalPhoto"])) {
-                            $file = "../images/products/" . $_POST["originalPhoto"];
+                            $file = basename(realpath("../images/products/" . $_POST["originalPhoto"]));
                             //delete the file using unlink
                             unlink($file);
                             $message = "The file $photo has been uploaded.";
